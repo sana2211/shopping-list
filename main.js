@@ -1,4 +1,4 @@
-nction addItem()
+function addItem()
 {
     $("#js-shopping-list-form").submit(function(evt){
         evt.preventDefault();
