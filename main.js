@@ -15,6 +15,7 @@ function addItem()
         </div>
         </li>`;
         $(".shopping-list").append(newItem);
+        $("#shopping-list-entry").val('');
     });
   
 }
@@ -36,7 +37,7 @@ function unCheckItem(){
     });
 }
 
-function removeItem()
+function deleteItem()
 {
     $(".shopping-item-delete").click(function(evt){
         $(this).closest("li").remove();
