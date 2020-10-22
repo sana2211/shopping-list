@@ -40,7 +40,7 @@ function unCheckItem(){
 function deleteItem()
 {
     $(".shopping-item-delete").click(function(evt){
-        $(this).closest("li").remove();
+        $(this).closest("li").remove("shopping-item-delete);
     })
 }
 
