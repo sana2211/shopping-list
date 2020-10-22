@@ -16,6 +16,7 @@ function addItem()
         </li>`;
         $(".shopping-list").append(newItem);
         $("#shopping-list-entry").val('');
+        init();
     });
   
 }
@@ -40,7 +41,7 @@ function unCheckItem(){
 function deleteItem()
 {
     $(".shopping-item-delete").click(function(evt){
-        $(this).closest("li").remove("shopping-item-delete);
+        $(this).closest("li").remove();
     })
 }
 
@@ -48,7 +49,7 @@ function init()
 {
     addItem();
     checkItem();
-    removeItem();
+    deleteItem();
 }
 
 $(init);
